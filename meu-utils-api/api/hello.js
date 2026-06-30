@@ -1,5 +1,5 @@
-export default function handler(req, res) {
-  res.status(200).json({
-    message: "Hello from Vercel"
-  });
-}
+export default {
+  fetch(request: Request) {
+    return new Response('Hello from Vercel!');
+  },
+};
